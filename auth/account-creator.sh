@@ -3,11 +3,11 @@
 # globals
 CWD=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 SQLITE_DB=${CWD}/db/auth.db
-
-read -p "Please enter a username: " USERNAME
-read -sp "Please enter a password: " PASSWORD && printf "\n"
-read -p "Expiry date? (YYYY-MM-DD): " EXPIRES
-read -p "Please specify access group (0=user 1=admin): " PRIVILEGE
+echo -e "----------------------开始创建用户------------------------"
+read -p "请输入用户名: " USERNAME
+read -sp "请输入密码: " PASSWORD && printf "\n"
+read -p "请输入过期日期? (YYYY-MM-DD): " EXPIRES
+read -p "请输入0或1来选择用户组 (0=user 1=admin): " PRIVILEGE
 
 if [[ ! ${EXPIRES} =~ [0-9]{4}-[0-9]{2}-[0-9]{2} ]]; then
     printf "invalid date=${EXPIRES} (e.g. YYYY-MM-DD)\n"
