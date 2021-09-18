@@ -17,7 +17,7 @@ fi
 if [[ -n "${USERNAME}" && -n "${PASSWORD}" && -n "${EXPIRES}" && -n "${PRIVILEGE}" ]]; then
     printf "adding username=${USERNAME} expires=${EXPIRES} privilege=${PRIVILEGE}\n"
     pushd ${CWD} && \
-      export HASH=`${CWD}/pbkdf2_sha256_hash.py ${PASSWORD} | awk '{print $2}'` && \
+      HASH=$(python3 ${CWD}/pbkdf2_sha256_hash.py ${PASSWORD} | awk '{print $2}') && \
       sqlite3 ${SQLITE_DB} "INSERT INTO USERS (privilege, expires, username, password) VALUES (${PRIVILEGE}, '${EXPIRES}', '${USERNAME}', '${HASH}');" && \
       popd
 else
