@@ -9,7 +9,7 @@ find a (recent)[n19](https://github.com/ab77/netflix-proxy#footnotes) Debian or 
 	  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
 	  && mkdir -p ~/netflix-proxy\
 	  && cd ~/netflix-proxy\
-	  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
+	  && curl -fsSL https://github.com/07031218/netflix-proxy/archive/refs/tags/latest.tar.gz | gunzip - | tar x --strip-components=1\
 	  && ./build.sh
 
 See the [**Wiki**](https://github.com/ab77/netflix-proxy/wiki) page(s) for some common troubleshooting ideas.
@@ -51,7 +51,7 @@ The following paragraphs show how to get this solution up and running with a few
 ```
 mkdir -p ~/netflix-proxy\
   && cd ~/netflix-proxy\
-  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
+  && curl -fsSL https://github.com/07031218/netflix-proxy/archive/refs/tags/latest.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
 ```
 
@@ -142,7 +142,7 @@ apt-get update\
   && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
   && mkdir -p ~/netflix-proxy\
   && cd ~/netflix-proxy\
-  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
+  && curl -fsSL https://github.com/07031218/netflix-proxy/archive/refs/tags/latest.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
 ```
 
@@ -165,7 +165,7 @@ apt-get update\
   && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
   && mkdir -p ~/netflix-proxy\
   && cd ~/netflix-proxy\
-  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
+  && curl -fsSL https://github.com/07031218/netflix-proxy/archive/refs/tags/latest.tar.gz | gunzip - | tar x --strip-components=1\
   | tar x --strip-components=1\
   && ./build.sh
 ```
@@ -189,7 +189,7 @@ apt-get update\
   && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
   && mkdir -p ~/netflix-proxy\
   && cd ~/netflix-proxy\
-  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
+  && curl -fsSL https://github.com/07031218/netflix-proxy/archive/refs/tags/latest.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
 ```
 
@@ -212,7 +212,7 @@ apt-get update\
   && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
   && mkdir -p ~/netflix-proxy\
   && cd ~/netflix-proxy\
-  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
+  && curl -fsSL https://github.com/07031218/netflix-proxy/archive/refs/tags/latest.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
 ```
 
@@ -238,7 +238,7 @@ sudo apt-get update\
   && sudo usermod -aG docker $(whoami | awk '{print $1}')\
   && mkdir -p ~/netflix-proxy\
   && cd ~/netflix-proxy\
-  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
+  && curl -fsSL https://github.com/07031218/netflix-proxy/archive/refs/tags/latest.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
 ```
 
@@ -260,7 +260,7 @@ apt-get update\
   && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
   && mkdir -p ~/netflix-proxy\
   && cd ~/netflix-proxy\
-  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
+  && curl -fsSL https://github.com/07031218/netflix-proxy/archive/refs/tags/latest.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
 ```
 
