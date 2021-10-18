@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 # globals
+apt install python3-pip > /dev/null 2>&1
+pip3 install passlib > /dev/null 2>&1
 CWD=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 SQLITE_DB=${CWD}/db/auth.db
 echo -e "----------------------开始创建用户------------------------"
