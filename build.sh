@@ -360,7 +360,7 @@ if [[ `systemctl` =~ -\.mount ]]; then
 fi
 log_action_end_msg $?
 
-log_action_begin_msg "reloading ipables rules"
+log_action_begin_msg "reloading iptables rules"
 sudo service ${SERVICE}-persistent reload &>> ${CWD}/netflix-proxy.log
 log_action_end_msg $?
 
